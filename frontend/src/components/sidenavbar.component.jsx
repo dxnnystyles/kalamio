@@ -48,7 +48,7 @@ const SideNav = () => {
                 <div className="md:sticky top-0 z-30">
 
                     <div className="md:hidden bg-surface py-1 border-b border-border flex flex-nowrap overflow-x-auto">
-                        <button ref={sideBarIconTab} className="p-5 capitalize" onClick={changePageState}>
+                        <button ref={sideBarIconTab} className="p-5 capitalize" onClick={changePageState} aria-label="Open menu">
                             <Icon name="menu" className="pointer-events-none" />
                         </button>
 

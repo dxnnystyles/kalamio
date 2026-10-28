@@ -39,7 +39,7 @@ const PollVotersModal = ({ blogId, poll, isOpen, onClose }) => {
                         <Icon name="poll" className="text-xl" />
                         <h2 className="text-lg font-semibold">Poll Voters</h2>
                     </div>
-                    <button onClick={onClose} className="poll-voters-modal__close">
+                    <button onClick={onClose} className="poll-voters-modal__close" aria-label="Close poll voters">
                         <Icon name="close" className="text-xl" />
                     </button>
                 </div>

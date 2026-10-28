@@ -249,6 +249,7 @@ const ImageCropperModal = ({ imageSrc, onComplete, onCancel, aspect = 1, cropSha
             type="button"
             onClick={onCancel}
             className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-grey/80 transition-colors"
+            aria-label="Close image editor"
           >
             <Icon name="close" className="text-dark-grey" />
           </button>
@@ -303,6 +304,7 @@ const ImageCropperModal = ({ imageSrc, onComplete, onCancel, aspect = 1, cropSha
                 type="button"
                 onClick={onCancel}
                 className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-grey/80 transition-colors"
+                aria-label="Close image editor"
               >
                 <Icon name="close" className="text-dark-grey" />
               </button>

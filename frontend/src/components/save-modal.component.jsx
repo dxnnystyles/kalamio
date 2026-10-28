@@ -159,7 +159,7 @@ const SaveModal = ({ blogId, isOpen, onClose }) => {
             <div className="save-modal">
                 <div className="save-modal__header">
                     <h3>Save to...</h3>
-                    <button className="save-modal__close" onClick={handleClose}>
+                    <button className="save-modal__close" onClick={handleClose} aria-label="Close save dialog">
                         <Icon name="close" />
                     </button>
                 </div>

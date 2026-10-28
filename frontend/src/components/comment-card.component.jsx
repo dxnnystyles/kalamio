@@ -386,11 +386,11 @@ const CommentCard = ({ index, commentData, isTextPost = false, onReplyDeleted })
                                 <span>{reply.children?.length || ""}</span>
                             </button>
                             {isTextPost && (
-                                <button className="comment-card__action-btn">
+                                <button className="comment-card__action-btn" aria-label="Reshare reply">
                                     <Icon name="repeat" />
                                 </button>
                             )}
-                            <button className="comment-card__action-btn">
+                            <button className="comment-card__action-btn" aria-label="Share reply">
                                 <Icon name="upload" />
                             </button>
                         </div>
@@ -408,6 +408,7 @@ const CommentCard = ({ index, commentData, isTextPost = false, onReplyDeleted })
             <button 
                 onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
                 className="comment-card__delete"
+                aria-label="More comment actions"
             >
                 <Icon name="more_horiz" className="text-lg" />
             </button>
@@ -515,7 +516,7 @@ const CommentCard = ({ index, commentData, isTextPost = false, onReplyDeleted })
                                 <span>{commentData.reshares || ""}</span>
                             </button>
 
-                            <button className="comment-card__action-btn">
+                            <button className="comment-card__action-btn" aria-label="Share comment">
                                 <Icon name="upload" />
                             </button>
                         </div>

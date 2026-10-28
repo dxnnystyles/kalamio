@@ -83,17 +83,17 @@ const MobileTopBar = () => {
                     />
                     {searchQuery.length > 0 && (
                         <div className="flex items-center gap-1">
-                            <button onClick={() => setSearchQuery("")} className="text-dark-grey hover:text-black flex items-center justify-center p-1 transition-colors">
+                            <button onClick={() => setSearchQuery("")} className="text-dark-grey hover:text-black flex items-center justify-center p-1 transition-colors" aria-label="Clear search">
                                 <Icon name="close" className="text-lg" />
                             </button>
                             <div className="w-[1px] h-5 bg-border mx-1"></div>
-                            <button onClick={handleSearchClick} className="text-black hover:opacity-80 flex items-center justify-center p-1 transition-colors">
+                            <button onClick={handleSearchClick} className="text-black hover:opacity-80 flex items-center justify-center p-1 transition-colors" aria-label="Search">
                                 <Icon name="search" className="text-lg" />
                             </button>
                         </div>
                     )}
                     {!searchQuery.length && (
-                        <button onClick={() => setSearchOpen(false)} className="p-1 text-dark-grey hover:text-black">
+                        <button onClick={() => setSearchOpen(false)} className="p-1 text-dark-grey hover:text-black" aria-label="Close search">
                             <Icon name="close" className="text-xl" />
                         </button>
                     )}
@@ -128,6 +128,7 @@ const MobileTopBar = () => {
                             <button
                                 className="mobile-top-bar__icon-btn"
                                 onClick={() => setSearchOpen(true)}
+                                aria-label="Open search"
                             >
                                 <Icon name="search" className="text-2xl" />
                             </button>

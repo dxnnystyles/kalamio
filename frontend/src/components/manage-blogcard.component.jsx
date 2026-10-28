@@ -47,6 +47,7 @@ export const ManagePublishedBlogsCard = ({ blog, isSelected, onToggleSelect }) =
                     <button
                         onClick={onToggleSelect}
                         className="flex-none text-dark-grey hover:text-black transition-colors"
+                        aria-label={`${isSelected ? "Deselect" : "Select"} ${displayTitle || "post"}`}
                     >
                         <Icon name={isSelected ? "check_box" : "check_box_outline_blank"} className="text-[22px]" />
                     </button>

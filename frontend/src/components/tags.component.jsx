@@ -37,6 +37,7 @@ const Tag = ({ tag, tagIndex }) => {
 
             <button className="mt-[2px] rounded-full absolute right-2 top-1/2 -translate-y-1/2 text-dark-grey hover:text-red transition-colors"
                 onClick={handleTagDelete}
+                aria-label={`Remove tag ${tag}`}
             >
                 <Icon name="close" className="text-xl pointer-events-none" />
             </button>
