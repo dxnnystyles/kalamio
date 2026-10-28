@@ -9,9 +9,11 @@ feedback are all welcome. This guide gets you from zero to a merged pull request
 - **Sign the [CLA](CLA.md).** When you open your first pull request, the CLA Assistant bot
   comments with a link. Signing takes one click with your GitHub account, and you only do
   it once. You keep the copyright to your work — the CLA explains exactly what you grant.
-- **Pick something to work on.** Issues labeled
+- **Pick something to work on, and wait to be assigned.** Issues labeled
   [`good first issue`](https://github.com/kalamiohq/kalamio/labels/good%20first%20issue) are
-  a great start. Comment on the issue to say you're taking it, so two people don't build the same thing.
+  a great start. Comment on the issue to claim it, then wait for a maintainer to assign it to
+  you before you open a pull request, so two people don't build the same thing. Pull requests
+  for issues that aren't assigned to you may be closed.
 - **Discuss big changes first, and wait for the `accepted` label.** For a new feature or a
   large refactor, open an issue before writing code, so we can agree on the approach. Once we
   agree it fits Kalamio and how it should be built, a maintainer adds the
